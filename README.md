@@ -1,6 +1,6 @@
 # 使い方
 
-# step1 任意
+# step1 (任意)
 VS Codeに devcontainer をインストールしておく。
 
 devcontainer で起動する。
