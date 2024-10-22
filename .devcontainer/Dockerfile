@@ -30,9 +30,7 @@ ENV UV_LINK_MODE=copy
 WORKDIR /opt
 
 COPY --from=builder /root/.cargo/bin/uv $CARGO_HOME/uv
-# COPY ./.python-version ./
 
-# RUN uv python pin "$(cat .python-version)"
 RUN uv python pin 3.12.7
 
 RUN chown -R vscode $CARGO_HOME
